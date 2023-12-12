@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Saikiran Umakanthrao Khangi - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #495057;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #01203e;
+            color: #ffffff;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            cursor: pointer;
+            color: #ffffff;
+            transition: color 0.7s;
+        }
+
+        h1 a {
+            color: inherit;
+            text-decoration: none !important;
+        }
+
+        h1:hover,
+        h1:active,
+        h1:focus {
+            color: rgb(122, 253, 240);
+            font-size: 2.6rem;
+
+        }
+
+        header img {
+            transition: transform 0.5s;
+        }
+
+        header img:hover {
+            transform: scale(1.45);
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:active,
+        nav ul li a:focus {
+            color: lavender;
+            font-size: 1.1rem;
+            text-decoration: none;
+            outline: none;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        section {
+            flex: 0 0 47.2%;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #343a40;
+            font-size: 1.8em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #6c757d;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .skills {
+            background-color: #f8f9fa;
+        }
+
+        .interests {
+            background-color: #f0f8ff;
+        }
+
+        main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fefefe;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn a {
+            color: #ffffff;
+            /* Set the text color to white */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover a {
+            text-decoration: none;
+            outline: none;
+        }
+
+        footer {
+            background-color: #022f60;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            clear: both;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s, font-size 0.3s;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            outline: none;
+        }
+
+        .fa {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="logo.png" alt="Logo" style="display:flexbox; height: 100px; margin-right: 60px; padding-left: 10px;">
+        <h1 style="display: inline-block;">
+            <a href="#home">Saikiran's Portfolio</a>
+        </h1>
+        <nav style="display: inline-block;">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section style=" flex-direction:row;display:flex; justify-content: space-between; width: 100%;">
+        <!-- Left Section with Text -->
+        <div style=" width: 800px; padding: 20px;">
+            <h2 style="height: 300px; border-bottom: none; color: #007bff; font-size: 4em;">I am Saikiran Khangi, a
+                Passionate
+                <span id="element" style="color: #01203e;"></span>
+            </h2>
+            <div style="margin-top: 20px;">
+                <button class="btn"><a
+                        href="https://drive.google.com/file/d/1pDpuzm2asx-U6Wz8yK8ER_XSIFAtPyaL/view?usp=sharing"
+                        target="_blank">
+                        Download Resume</a></button>
+                <button class="btn"><a
+                        href="https://drive.google.com/file/d/1pVvpWJs1DcxnnZRXTrPS7Jj1x599FX-v/view?usp=sharing"
+                        target="_blank"> View
+                        Cover Letter </a></button>
+                <button class="btn"><a
+                        href="https://drive.google.com/file/d/1pQniO0ufMEv45kurcsrydkF4eisZcwp3/view?usp=sharing"
+                        target="_blank">Additional
+                        Documents</a> </button>
+            </div>
+        </div>
+
+        <!-- Right Section with Image -->
+        <div style="padding: 20px; background-color: #f0f8ff; height: 400px; width: 400px; margin-top: 20px;">
+            <img src="Saikiran img.jpg" alt="Developer Image" style="width: 70%;height: auto;">
+        </div>
+
+    </section>
+
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Saikiran Umakanthrao Khangi, a passionate student/Fresher
+            Full-Stack Web developer with academic background of
+            Post Graduation Diploma From CDAC Noida in Development in advanced Computing [PG-DAC].
+            I have a keen interest in several Web Development Technologies and work
+            and am always excited about My journey that includes successfully transitioning from a traditional software
+            development
+            background to a full-stack development role. This adaptability is not just about mastering new technologies
+            it's about embracing change and utilizing it as a catalyst for personal and professional growth.
+            My capacity to swiftly learn and apply new skills positions me as a versatile and dynamic professional.
+        </p>
+    </section>
+
+
+    <main>
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1: Java</li>
+                <li>Skill 2: JavaScript</li>
+                <li>Skill 3: ReactJS</li>
+                <li>Skill 4: NodeJS</li>
+                <li>Skill 5: HTML/CSS</li>
+                <li>Skill 6: SpringBoot</li>
+            </ul>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Technologies Enthusiast</li>
+                <li>Cooking or Culinary Arts</li>
+                <li>Community Involvement</li>
+                <li>FPS-Gaming, Mid Games</li>
+                <li>Personal Development</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <section>
+        <h2>Projects</h2>
+
+        <h3>Project 1- Swift Rail: Hassle-Free Railway Reservation System</h3>
+        <p>Railway Reservation Management System<br>
+            Technologies Used :- Java, Spring Boot micro services, JPA, ReactJS,
+            Bootstrap, MySQL.
+            <li>The Railway Reservation System project aims to create an efficient online
+                platform to ensure smooth and efficient ticket booking experience for user.</li>
+            <li>Integrated MySQL database to store and manage user profiles, train
+                schedules, seat information, and booking details.</li>
+            <li>The Railway Ticket Reservation System successfully streamlined the ticket
+                booking process for users, resulting in improved customer satisfaction and
+                increased revenue for the railway company.<br> The system's efficient
+                architecture, secure authentication mechanisms, and responsive design
+                contributed to its success in providing a seamless booking experience to
+                users while adhering to industry<br> best practices</li>
+        </p>
+        <a href="https://github.com/Saikiran-8" target="_blank">Project 1 Link</a>
+
+        <h3>Project 2- Design and Analysis of Automatic Waste Segregation Machine, B.E Project</h3>
+        <p>Description of Project 2.
+            Worked on B.E Project named Design and analysis of Automatic Waste
+            segregation Machine(AWSM) with other 3 of my Project partners including me.<br>
+            Main Task of the Project is that different type of waste coming from Dump
+            yard should be segregated manually with the help of our proposed prototype
+            design attached by different type of working<br>sensors and Aurdino megaboard.
+        </p>
+    </section>
+
+
+    <footer
+        style="background-color: #022f60; color: #ffffff; text-align: center; padding: 20px 0; display: flex; justify-content: space-between;">
+
+        <!-- Left Section -->
+        <div style="text-align: left; width: 48%; padding: 0 20px;">
+            <h2
+                style="color: #f0f8ff; border-bottom: 1px solid #007bff; padding-bottom: 5px; margin-bottom: 15px; display: inline-block;">
+                Contact Information</h2>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:realsaikiran@gmail.com"
+                    target="_blank">realsaikiran@gmail.com</a></p>
+            <p><i class="fas fa-envelope"></i> Personal Email: <a href="mailto:saikirankhangi9@gmail.com"
+                    target="_blank">saikirankhangi9@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> Contact: <a href="tel:+8983816437">8983816437</a> / <a
+                    href="tel:+9764403739">9764403739</a></p>
+            <p><i class="fab fa-linkedin"></i> LinkedIn: <a
+                    href="https://www.linkedin.com/in/saikiran-khangi-8406b0206/" target="_blank">Saikiran Khangi</a>
+            </p>
+            <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Saikiran-8"
+                    target="_blank">Saikiran-8</a></p>
+            <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/_being_sk_____/"
+                    target="_blank">_being_sk_____</a></p>
+        </div>
+
+        <!-- Right Section -->
+        <div style="text-align: left; width: 48%; padding: 0 20px;">
+            <h2
+                style="color: #f0f8ff; border-bottom: 1px solid #007bff; padding-bottom: 5px; margin-bottom: 15px; display: inline-block;">
+                Have a chat with me ?</h2>
+            <form style="text-align: left;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" style="width: 100%; margin-bottom: 10px;">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" style="width: 100%; margin-bottom: 10px;">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" style="width: 100%; margin-bottom: 10px;"></textarea>
+
+                <input type="submit" value="Submit"
+                    style="background-color: #007bff; color: #ffffff; padding: 10px; border: none; cursor: pointer;">
+            </form>
+        </div>
+
+    </footer>
+
+    <!-- Copyright Section -->
+    <div style="background-color: #01203e; color: #ffffff; text-align: center; padding: 10px 0;">
+        <p>&copy; 2023 Saikiran Umakanthrao Khangi. All rights reserved. | Designed by Saikiran Khangi</p>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full-stack Web developer', 'ReactJS Developer'],
+            typeSpeed: 90,
+            backDelay: 1000,
+            loop: true,
+        });
+    </script>
+
+</body>
+
+</html>
